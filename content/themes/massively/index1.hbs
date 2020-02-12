@@ -1,12 +1,12 @@
 {{!< default1}}
 {{!-- The tag above means: insert everything in this file
-into the {body} of the default.hbs template --}}
+into the {body} of the default1.hbs template --}}
 
 {{!-- Main --}}
 <main id="main">
 
     {{!-- Featured Post --}}
-    {{#is "home"}}
+    {{#is "Inicio"}}
     {{#get "posts" filter="featured:true" limit="1" as |featured_post|}}
         {{#foreach featured_post}}
             <article class="post featured">
